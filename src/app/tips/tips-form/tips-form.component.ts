@@ -6,7 +6,7 @@ import { TipsService } from '../services/tips.service';
   templateUrl: './tips-form.component.html',
 })
 export class TipsFormComponent {
-  bill: number = 0
+  bill!: number
   numberOfPeople: number = 1
   tipsValues = [5, 10, 15, 25, 50]
 
