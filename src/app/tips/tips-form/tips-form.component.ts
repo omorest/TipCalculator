@@ -22,7 +22,6 @@ export class TipsFormComponent {
 
   onChangeNumberOfPeople() {
     this.tipService.setNumberOfPeople(this.numberOfPeople)
-
   }
 
 }
