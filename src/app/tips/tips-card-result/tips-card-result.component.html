@@ -1,0 +1,33 @@
+<div class="bg-emerald-900 w-[100%] h-[100%] rounded-lg py-6 px-8 flex flex-col justify-between">
+  <div class="flex flex-col gap-8 max-w-[100%]">
+    <div class="flex justify-between">
+      <div>
+        <h4 class="text-white text-sm">Tip Amount</h4>
+        <span class="text-slate-200 text-xs ">/ person</span>
+      </div>
+      <span class="text-4xl text-emerald-200 font-semibold">${{tipAmountPerPerson}}</span>
+    </div>
+
+    <div class="flex justify-between">
+      <div>
+        <h4 class="text-white text-sm">Total Price</h4>
+        <span class="text-slate-200 text-xs">/ person</span>
+      </div>
+      <span class="text-4xl text-emerald-200 font-semibold ">${{totalPricePerPerson}}</span>
+    </div>
+  </div>
+  <div class="flex justify-between">
+    <div >
+      <h4 class="text-white text-sm">Total Price</h4>
+    </div>
+    <span class="text-4xl text-emerald-200 font-semibold">${{totalPrice}}</span>
+  </div>
+  <div>
+    <button
+      (click)="resetPrice()"
+      class="text-2xl bg-emerald-200 text-emerald-900 w-[100%] p-1 rounded-md"
+    >
+      Reset
+    </button>
+  </div>
+</div>
